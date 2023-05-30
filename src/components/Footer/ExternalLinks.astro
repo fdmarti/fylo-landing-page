@@ -1,0 +1,38 @@
+<section class='external-links'>
+	<a href='#'>About Us</a>
+	<a href='#'>Contact Us</a>
+
+	<a href='#'>Jobs</a>
+	<a href='#'>Terms</a>
+
+	<a href='#'>Press</a>
+	<a href='#'>Privacy</a>
+
+	<a href='#'>Blog</a>
+</section>
+<style>
+	.external-links {
+		flex: 0 1 25%;
+
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+		gap: 2rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--white);
+        font-weight: 600;
+	}
+
+	a:hover {
+		color: var(--BrightBlueHover);
+	}
+
+	@media (max-width:991px){
+		.external-links {
+			grid-template-columns: 1fr;
+			width: 200px;
+		}
+	}
+</style>

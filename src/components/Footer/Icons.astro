@@ -1,0 +1,53 @@
+---
+import { Icon } from 'astro-icon';
+---
+
+<section class='icons'>
+	<a href='https://github.com/fdmarti' target='_blank'>
+		<Icon pack='ri' name='github-fill' />
+	</a>
+	<a href='https://www.linkedin.com/in/fededmartinez/' target='_blank'>
+		<Icon pack='mdi' name='linkedin' />
+	</a>
+	<a href='https://www.instagram.com/fedeeemartinez/' target='_blank'>
+		<Icon pack='mdi' name='instagram' />
+	</a>
+</section>
+<style>
+	.icons {
+		display: flex;
+		justify-content: flex-end;
+		padding: 50px 0;
+	}
+
+	.icons a {
+		color: var(--white);
+		margin-right: 30px;
+		width: 40px;
+		height: 40px;
+
+		display: flex;
+		justify-content: center;
+
+		border: solid 2px var(--white);
+		border-radius: 50%;
+	}
+
+	.icons a:hover {
+		border: solid 2px var(--BrightBlueHover);
+		color: var(--BrightBlueHover);
+	}
+
+	svg {
+		width: 25px;
+	}
+
+	@media (max-width: 991px) {
+		.icons {
+			gap: 1rem;
+		}
+		.icons a {
+			margin: 0 auto;
+		}
+	}
+</style>

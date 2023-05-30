@@ -1,0 +1,51 @@
+<section class='logo-info'>
+	<img
+		src='./images/logo-white.svg'
+		class='white-logo'
+		alt="Fylo's wjote logo in the footer"
+	/>
+
+	<section class='contact'>
+		<img src='./images/icon-phone.svg' class='icon' alt='phone icon' />
+		<span>Phone: +1-543-123-4567</span>
+	</section>
+
+	<section class='contact'>
+		<img src='./images/icon-email.svg' class='icon' alt='email icon' />
+		<span>example@fylo.com</span>
+	</section>
+</section>
+<style>
+	.logo-info {
+		display: flex;
+		flex-direction: column;
+		flex: 0 1 25%;
+		gap: 1rem;
+	}
+
+	.white-logo {
+		max-width: 200px;
+		margin-bottom: 30px;
+	}
+
+	.contact {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	span {
+		color: var(--white);
+	}
+
+	.icon {
+		max-width: 20px;
+	}
+
+	@media (max-width: 991px) {
+		span {
+			white-space: nowrap;
+			text-align: left;
+		}
+	}
+</style>

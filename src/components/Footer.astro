@@ -1,0 +1,28 @@
+---
+import LogoInfo from './Footer/LogoInfo.astro';
+import ExternalLinks from './Footer/ExternalLinks.astro';
+import Icons from './Footer/Icons.astro';
+---
+
+<footer>
+	<LogoInfo />
+	<ExternalLinks />
+	<Icons />
+</footer>
+<style>
+	footer {
+		background-color: var(--VeryDarkBlue);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 100px 60px;
+	}
+
+	@media (max-width: 991px) {
+		footer {
+			padding: 100px 30px;
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+</style>

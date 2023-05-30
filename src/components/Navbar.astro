@@ -1,0 +1,51 @@
+<nav class='navbar'>
+	<a href='/' class='logo'>
+		<img src='./images/logo.svg' alt="Fylo's logo" />
+	</a>
+	<ul class='menu'>
+		<li><a href='#'>Features</a></li>
+		<li><a href='#'>Team</a></li>
+		<li><a href='#'>Sign In</a></li>
+	</ul>
+</nav>
+<style>
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 60px;
+	}
+
+	.menu {
+		display: flex;
+		gap: 5rem;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--VeryDarkBlue);
+		font-weight: 700;
+	}
+
+	@media (max-width: 768px) {
+		.navbar {
+			align-items: center;
+			padding: 40px 25px;
+		}
+
+		.logo img {
+			width: 100px;
+		}
+		.menu {
+			gap: 2rem;
+		}
+
+		a {
+			white-space: nowrap;
+			font-size: 14px;
+		}
+	}
+</style>

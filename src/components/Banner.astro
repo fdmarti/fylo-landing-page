@@ -1,0 +1,52 @@
+---
+import From from './Vue/Form.vue'
+---
+
+<section class='banner'>
+	<section class='get-started'>
+		<h1>All your files in one secure location, accessible anywhere.</h1>
+		<p>
+			Fylo stores your most important files in one secure location. Access them
+			wherever you need, share and collaborate with friends, family, and
+			co-workers.
+		</p>
+		<From client:load buttonText='Get Started'/>
+	</section>
+	<section class='image-banner'>
+		<img
+			src='./images/illustration-1.svg'
+			alt="ilustration for the banner in fylo's site"
+		/>
+	</section>
+</section>
+<style>
+	.banner {
+		display: flex;
+		align-items: center;
+		padding: 30px 60px;
+	}
+
+	.get-started {
+		flex: 0 1 50%;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	p {
+		font-size: 24px;
+	}
+
+	@media (max-width: 991px) {
+		.banner {
+			flex-direction: column-reverse;
+			gap: 1rem;
+			padding: 30px 30px;
+		}
+
+		.get-started {
+			text-align: center;
+		}
+	}
+</style>

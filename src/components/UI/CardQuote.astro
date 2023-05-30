@@ -1,0 +1,71 @@
+<section class='card-quote'>
+	<img src='./images/icon-quotes.svg' class='quote-icon' alt='quotes icon' />
+	<p class='text-card'>
+		Fylo has improved our team productivity by an order of magnitude. Since
+		making the switch our team has become a well-oiled collaboration machine.
+	</p>
+
+	<section class='user-information'>
+		<img
+			src='./images/avatar-testimonial.jpg'
+			alt='avatar for the testimonal'
+			class='user-img'
+		/>
+		<section class='text-user-information'>
+			<h3>Kyle Burton</h3>
+			<p class='info-user'>Founder & CEO, Huddle</p>
+		</section>
+	</section>
+</section>
+
+<style>
+	.card-quote {
+		background-color: var(--white);
+		padding: 30px;
+		max-width: 300px;
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+		border-radius: 15px;
+		box-shadow: 0 10px 30px -15px #000;
+	}
+
+	.quote-icon {
+		max-width: 20px;
+	}
+
+	.text-card {
+		font-size: 15px;
+		font-family: var(--raleway);
+		font-weight: 600;
+		line-height: 24px;
+	}
+
+	.user-information {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 1rem;
+	}
+
+	.user-img {
+		max-width: 40px;
+		border-radius: 50px;
+	}
+
+	h3 {
+		margin: 0;
+		font-size: 12px;
+	}
+
+	.info-user {
+		margin: 0;
+		font-size: 11px;
+	}
+
+	@media (max-width: 991px) {
+		.card-quote {
+			margin: 50px auto 0;
+		}
+	}
+</style>
